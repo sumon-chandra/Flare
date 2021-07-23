@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;700&family=Molengo&family=Space+Mono:wght@700&family=Trocchi&display=swap');/* font-family: 'Baloo Tamma 2', cursive;
+font-family: 'Molengo', sans-serif;
+font-family: 'Trocchi', serif; */
+/*----------------------------------------------------------
+ Common CSS 
+ -----------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    font-family: 'Trocchi', serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Baloo Tamma 2', "cursive";
+    font-weight: 700;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------
+ Header area  
+ =---------------------------------------------------------------------------*/
+
+ .header{
+     background: linear-gradient(0deg, rgba(0, 0, 0, 0.589), rgb(0, 0, 0)), url(img/banner.jpg) ;
+     /* background-color: rgba(0, 0, 0, 0.5); */
+     background-position: center;
+     background-size:cover;
+     width: 100%;
+     height:100vh;
+ }
+.top_header{
+    width: 100%;
+    height: 100px;
+    background:linear-gradient(#000000, #00000000);
+    position: fixed;
+    z-index: 2;
+}
+.top-header-area{
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px  10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    position: relative;
+    left:40px;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    margin-left: 30px;
+}
+nav ul li{
+    margin-right: 40px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Molengo', sans-serif;
+    transition: 0.5s;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+nav ul li a:hover{
+    background-color: tomato;
+}
+
+/* ---------------------------------------------------Search Box  -----------------------------*/
+.serach_box{
+    margin-left:100px;
+}
+.serach_box input{
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    height: 30px;;
+}
+.serach_box button{
+    border: none;
+    background-color: tomato;
+    height: 30px;;
+    width: 90px;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.serach_box button:hover{
+    background-color: #d82d0f;
+}
+
+.long{
+    width: 2px;
+    height:15px;
+    background-color: #fff;
+    position: relative;
+    top: 4px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.sign_in a{
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 8px 15px;
+    transition: 0.5s;
+}
+.sign_in a:hover{
+    background-color: tomato;
+}
+/* --------------------------------
+Header text  
+------------------------------------*/
+.header_text{
+    position: absolute;
+    top: 27%;
+    left: 15%;
+}
+
+.header_text h1{
+    font-size: 250px;
+    height: 280px;;
+    color: tomato;
+}
+.header_text p{
+    font-size: 35px;
+    width: 400px;
+    color: #fff;
+    margin-left: 50px;;
+}
+
+.sd{
+    position: absolute;
+    top: 70%;
+    left: 70px;;
+    transform: rotate(90deg);
+    color: #fff;
+    
+}
+.sd p{
+    right: 220px;
+    position: relative;
+    top: 109px;
+}
+.line{
+    width: 2px;
+    height: 200px;
+    background-color: tomato;
+    transform: rotate(90deg);
+}
+
+.socials{
+    position: absolute;
+    top: 90%;
+    right: 100px;
+    color: #fff;
+}
+.socials i{
+    margin: 0 20px;
+    font-size: 40px;
+}
+.socials i:hover{
+    color: tomato;
+}
+
+/*---------------------------------------
+ About Section  
+ ------------------------------------------*/
+ .about{
+    width: 80%;
+    height: 220vh;
+    margin: 0 auto;
+ }
+.about_head{
+    width: 100%;
+    height: 240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.about_head h1{
+    font-size: 170px;
+    height: 250px;
+    color: #fff;
+    opacity: .1;
+    font-weight: 400;
+}
+.about_head h3{
+    color: tomato;
+    position: relative;
+    top: -100px;
+    left: 15px;
+    font-weight: 500;
+    font-family: 'Molengo', sans-serif;
+}
+
+.about_info{
+    width: 100%;
+    height: 34px;
+    margin: 100px auto;
+}
+
+.about_top{
+    display: flex;
+
+}
+.about_top_text{
+    width: 50%;
+    color: #fff;
+}
+.about_top_text h3{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.about_top_text p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: sans-serif;
+    
+}
+.about_top_img{
+    width: 50%;
+}
+.about_top_img img{
+    width: 100%;
+    height: 435px;
+}
+
+.box .a{
+    font-size: 40px;
+    z-index: 1;
+}
+.box h1{
+    font-size: 40px;
+    margin-left:70px;
+}
+
+.box p{
+    margin-top: 30px;
+    line-height: 40px;
+    font-family: sans-serif;
+    opacity: .6;
+}
+.box{
+    position: relative;
+    width: 600px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.box h1::before{
+    content: counter(ctr);
+    counter-increment: ctr;
+    width: 60px;
+    height: 60px;
+    background-color: tomato;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.about_details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+}
+
+
+/* ----------------------------------------------
+      Services Section 
+-------------------------------------------------*/
+.services{
+    width: 80%;
+    margin: 0 auto;
+}
+.services_head h1{
+    font-size: 170px;
+    height: 250px;
+    color: #fff;
+    opacity: .1;
+    font-weight: 400;
+}
+
+.services_head h3{
+    color: tomato;
+    position: relative;
+    top: -100px;
+    left: 15px;
+    font-weight: 400;
+    font-family: 'Molengo', sans-serif;
+}
+
+.services_head_text{
+    color: #fff;
+    display: flex;
+    height: 300px;
+    
+}
+
+.services_head_text h2{
+    width: 600px;
+    font-size: 40px;
+    font-family: 'Molengo', sans-serif;
+    line-height: 50px;
+}
+
+.services_head_text p{
+    width: 600px;
+    font-family: 'Molengo', sans-serif;
+    line-height: 35px;
+    opacity: .6;
+    font-size: 20px;
+}
+
+.services_details{
+    width: 100%;
+    height: 132vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services_box{
+    width: 600px;
+    height: 250px;
+    color: #fff;
+    padding: 0 80px 0 0;
+}
+.services_text h2{
+    font-size: 30px;
+    font-family: 'Molengo', sans-serif;
+    font-weight: 700;
+} 
+.services_text p{
+    font-size: 20px;
+    font-family: 'Molengo', sans-serif;
+    opacity: .6;
+    margin-top: 20px;
+} 
+
+
+.services_icon{
+    width: 77px;
+} 
+.services_icon img{
+    width: 100%;
+} 
+
+/*---------------------------------------------------------
+                      Our Recent Works 
+------------------------------------------------------------*/
+
+.WORKS{
+    width: 80%;
+    margin: 0 auto;
+}
+.works_head h1{
+    font-size: 170px;
+    height: 250px;
+    color: #fff;
+    opacity: .1;
+    font-weight: 400;
+}
+
+.works_head h3{
+    color: tomato;
+    position: relative;
+    top: -100px;
+    left: 15px;
+    font-weight: 400;
+    font-family: 'Molengo', sans-serif;
+}
+
+.works_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hhh {
+    width: 50%;
+    color: #fff;
+}
+.hhh h2{
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
